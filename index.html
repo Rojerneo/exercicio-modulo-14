@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astro+</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,400;1,400;1,700&family=Space+Mono:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header id="cabecalho" class="navbar navbar-expand-lg sticky-top pt-3 pb-3">
+        <div class="container">
+            <h1 class="navbar-brand fs-1 mb-0 font-titulos">
+                Astro<i class="bi bi-plus"></i></h1>
+            <button id="btn-hamburger" class="navbar-toggler" data-bs-target="#menu-navegacao" data-bs-toggle="collapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav id="menu-navegacao" class="navbar-collapse collapse justify-content-end">
+                <ul class="nav nav-pills d-block d-md-flex mb-0">
+                    <li class="nav-item fw-bold ms-2 me-2">
+                        <a href="#sobre" class="nav-link">
+                            <i class="bi bi-backpack2 me-2"></i>
+                            Sobre o site</a>
+                    </li>
+                    <li class="nav-item fw-bold ms-2 me-2">
+                        <a href="#destaque" class="nav-link">
+                            <i class="bi bi-brightness-high-fill me-2"></i>
+                            Destaques</a>
+                    </li>
+                    <li class="nav-item fw-bold ms-2 me-2">
+                        <a href="#ultimas-noticias" class="nav-link">
+                            <i class="bi bi-clock-history me-2"></i>
+                            Últimas Notícias</a>
+                    </li>
+                    <li class="nav-item fw-bold ms-2 me-2">
+                        <a href="#fale-conosco" class="nav-link">
+                            <i class="bi bi-chat-left-text me-2"></i>
+                            Fale conosco</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-smooth-scroll="true">
+        <section id="sobre">
+            <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="./images/carousel/galaxia.jpg " class="w-100" alt="">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./images/carousel/milky-way-1.jpg" class="w-100" alt="">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./images/carousel/nebulosa.jpg" class="w-100" alt="">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./images/carousel/polar-lights.jpg" class="w-100" alt="">
+                    </div>
+                </div>
+                <button type="button" class="carousel-control-prev" data-bs-target="#carousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button type="button" class="carousel-control-next" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="3"></button>
+                </div>
+            </div>
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img class="w-100 rounded" src="./images/buracos-negros/buraco-negro-1.jpg" alt="">
+                    </div>
+                    <div class="col-md-6 mt-3 mt-md-0">
+                        <h2 class="font-titulos">Sobre o site</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt quam quas minus. Dignissimos sed ipsa numquam cupiditate molestias quas, voluptate ut, at exercitationem laborum, eligendi facilis aut minus pariatur amet!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore velit labore, ut in unde libero sint nemo impedit iure eos aut dolor atque a voluptatibus. Distinctio fugiat nostrum excepturi? Illum.</p>
+                        <h3 class="font-titulos">Nosso compromisso</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deserunt quam quas minus. Dignissimos sed ipsa numquam cupiditate molestias quas, voluptate ut, at exercitationem laborum, eligendi facilis aut minus pariatur amet!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="destaque" class="mt-5 pb-5">
+            <div class="container">
+                <div class="row text-center">
+                    <h2 class="font-titulos mb-4 mt-4">Destaques</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 pb-4">
+                        <img class="w-100 rounded" src="./images/moon-5830698_1280.jpg" alt="">
+                        <h3 class="font-titulos mt-3">Cometa IX-20 visível a olho nu</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, provident laboriosam sunt, ipsam quis accusantium dolores necessitatibus aut voluptatum maiores repellendus dolorum iste enim error, incidunt impedit ut rerum aliquid!</p>
+                        <button type="button" class="btn">Ler mais...</button>
+                    </div>
+                    <div class="col-md-6">
+                        <img class="w-100 rounded" src="./images/planets-5503203_1280.jpg" alt="">
+                        <h3 class="font-titulos mt-3">Novidades sobre as ondas gravitacionais</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, provident laboriosam sunt, ipsam quis accusantium dolores necessitatibus aut voluptatum maiores repellendus dolorum iste enim error, incidunt impedit ut rerum aliquid!</p>
+                        <button type="button" class="btn">Ler mais...</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="ultimas-noticias" class=" pt-4 mb-4">
+            <h2 class="font-titulos text-center pb-3">Últimas Notícias</h2>
+            <div class="container">
+                <nav class="nav nav-tabs justify-content-center">
+                    <button data-bs-toggle="tab" data-bs-target="#aba1" class="nav-link active me-3" type="button">Sistema Solar</button>
+                    <button data-bs-toggle="tab" data-bs-target="#aba2" class="nav-link me-3" type="button">Via Láctea</button>
+                    <button data-bs-toggle="tab" data-bs-target="#aba3" class="nav-link me-3" type="button">Universo</button>
+                    <button data-bs-toggle="tab" data-bs-target="#aba4" class="nav-link me-3" type="button">Exo Planetas</button>
+                </nav>
+                <div class="tab-content mt-4">
+                    <div id="aba1" class="tab-pane active">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-3 mb-4">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h5 class="font-titulos mb-0">Marte em Evidência</h5>
+                                        </div>
+                                        <div class="card-body">
+                                            <img class="w-100 rounded" src="./images/planetas/marte.jpg" alt="">
+                                            <h5 class="font-titulos mt-3">Nasa divulga novidades sobre Marte</h5>
+                                            <p class="card-text"></p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, facilis soluta voluptatem aut.</p>
+                                            <a href="#" class="btn btn-primary">Saiba mais</a>
+                                        </div>
+                                        <div class="card-footer">
+                                            <p class="card-text"> Postado em 21/09/2023 - 10:15</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-4">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h5 class="font-titulos mb-0">Saturno e seus anéis</h5>
+                                        </div>
+                                        <div class="card-body">
+                                            <img class="w-100 rounded" src="./images/planetas/saturno.jpg" alt="">
+                                            <h5 class="font-titulos mt-3">A idade dos Anéis de Saturno Pode Ter Sido Descoberta</h5>
+                                            <p class="card-text"></p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, rerum incidunt asperiores quos error sit voluptates, magnam optio sunt deserunt unde aliquam voluptatibus blanditiis eius quia sed tenetur vero quae?</p>
+                                            <a href="#" class="btn btn-primary">Saiba mais</a>
+                                        </div>
+                                        <div class="card-footer">
+                                            <p class="card-text"> Postado em 15/09/2023 - 08:15</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-4">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h5 class="font-titulos mb-0">Terra Mais Lenta</h5>
+                                        </div>
+                                        <div class="card-body">
+                                            <img class="w-100 rounded" src="./images/planetas/terra.jpg" alt="">
+                                            <h5 class="font-titulos mt-3">A Terra pode ter reduzido a sua rotação</h5>
+                                            <p class="card-text"></p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                                            <a href="#" class="btn btn-primary">Saiba mais</a>
+                                        </div>
+                                        <div class="card-footer">
+                                            <p class="card-text"> Postado em 21/08/2023 - 12:00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-4">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h5 class="font-titulos mb-0">Marte em Evidência</h5>
+                                        </div>
+                                        <div class="card-body">
+                                            <img class="w-100 rounded" src="./images/planetas/marte.jpg" alt="">
+                                            <h5 class="font-titulos mt-3">Nasa divulga novidades sobre Marte</h5>
+                                            <p class="card-text"></p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt sapiente voluptate, maiores.</p>
+                                            <a href="#" class="btn btn-primary">Saiba mais</a>
+                                        </div>
+                                        <div class="card-footer">
+                                            <p class="card-text"> Postado em 21/09/2023 - 10:15</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-4">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h5 class="font-titulos mb-0">Saturno e seus anéis</h5>
+                                        </div>
+                                        <div class="card-body">
+                                            <img class="w-100 rounded" src="./images/planetas/saturno.jpg" alt="">
+                                            <h5 class="font-titulos mt-3">A idade dos Anéis de Saturno Pode Ter Sido Descoberta</h5>
+                                            <p class="card-text"></p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nihil assumenda laborum eligendi sit voluptate?</p>
+                                            <a href="#" class="btn btn-primary">Saiba mais</a>
+                                        </div>
+                                        <div class="card-footer">
+                                            <p class="card-text"> Postado em 15/09/2023 - 08:15</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-4">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h5 class="font-titulos mb-0">Terra Mais Lenta</h5>
+                                        </div>
+                                        <div class="card-body">
+                                            <img class="w-100 rounded" src="./images/planetas/terra.jpg" alt="">
+                                            <h5 class="font-titulos mt-3">A Terra pode ter reduzido a sua rotação</h5>
+                                            <p class="card-text"></p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                                            <a href="#" class="btn btn-primary">Saiba mais</a>
+                                        </div>
+                                        <div class="card-footer">
+                                            <p class="card-text"> Postado em 21/08/2023 - 12:00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="aba2" class="tab-pane">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-3 mb-4">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h5 class="font-titulos mb-0">Sagitaruis A*</h5>
+                                        </div>
+                                        <div class="card-body">
+                                            <img class="w-100 rounded" src="./images/buracos-negros/buraco-negro-1.jpg" alt="">
+                                            <h5 class="font-titulos mt-3">Nova foto do nosso Buraco Negro</h5>
+                                            <p class="card-text"></p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, facilis soluta voluptatem aut consequatur ipsum eligendi enim magni tempora similique vero hic, reiciendis odio in eum cumque nemo quam voluptatibus.</p>
+                                            <a href="#" class="btn btn-primary">Saiba mais</a>
+                                        </div>
+                                        <div class="card-footer">
+                                            <p class="card-text"> Postado em 21/09/2023 - 10:15</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-4">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h5 class="font-titulos mb-0">Hovers Interestelares?</h5>
+                                        </div>
+                                        <div class="card-body">
+                                            <img class="w-100 rounded" src="./images/sondas-espaciais/mars-11656_1280.jpg" alt="">
+                                            <h5 class="font-titulos mt-3">Um dia conseguiremos enviar robôs para fora do Sistema Solar</h5>
+                                            <p class="card-text"></p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                            <a href="#" class="btn btn-primary">Saiba mais</a>
+                                        </div>
+                                        <div class="card-footer">
+                                            <p class="card-text"> Postado em 15/09/2023 - 08:15</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-4">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h5 class="font-titulos mb-0">A Galáxia e a Matéria Escura</h5>
+                                        </div>
+                                        <div class="card-body">
+                                            <img class="w-100 rounded" src="./images/carousel/milky-way-1.jpg" alt="">
+                                            <h5 class="font-titulos mt-3">Porque a Via Láctea não desacelera</h5>
+                                            <p class="card-text"></p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa repudiandae dolore provident praesentium eius.</p>
+                                            <a href="#" class="btn btn-primary">Saiba mais</a>
+                                        </div>
+                                        <div class="card-footer">
+                                            <p class="card-text"> Postado em 21/08/2023 - 12:00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="aba3" class="tab-pane">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-3 mb-4">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h5 class="font-titulos mb-0">Constante de Hubble</h5>
+                                        </div>
+                                        <div class="card-body">
+                                            <img class="w-100 rounded" src="./images/buracos-negros/buraco-negro-3.jpg" alt="">
+                                            <h5 class="font-titulos mt-3">Expansão do Universo segue intrigando os cientistas</h5>
+                                            <p class="card-text"></p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, facilis soluta voluptatem aut consequatur ipsum eligendi enim magni tempora similique vero hic, reiciendis odio in eum cumque nemo quam voluptatibus.</p>
+                                            <a href="#" class="btn btn-primary">Saiba mais</a>
+                                        </div>
+                                        <div class="card-footer">
+                                            <p class="card-text"> Postado em 21/09/2023 - 10:15</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-4">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h5 class="font-titulos mb-0">Nebulosa de Orion</h5>
+                                        </div>
+                                        <div class="card-body">
+                                            <img class="w-100 rounded" src="./images/buracos-negros/orion-nebula-11107_1280.jpg" alt="">
+                                            <h5 class="font-titulos mt-3">Possível sistema quádruplo pode estar escondido em Orion</h5>
+                                            <p class="card-text"></p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, rerum incidunt asperiores quos error sit voluptates, magnam optio sunt deserunt unde aliquam voluptatibus blanditiis eius quia sed tenetur vero quae?</p>
+                                            <a href="#" class="btn btn-primary">Saiba mais</a>
+                                        </div>
+                                        <div class="card-footer">
+                                            <p class="card-text"> Postado em 15/09/2023 - 08:15</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-4">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h5 class="font-titulos mb-0">Idade do Universo</h5>
+                                        </div>
+                                        <div class="card-body">
+                                            <img class="w-100 rounded" src="./images/buracos-negros/universe-2742113_1280.jpg" alt="">
+                                            <h5 class="font-titulos mt-3">Idade do universo pode não estar correta</h5>
+                                            <p class="card-text"></p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa repudiandae dolore provident praesentium eius. Molestias soluta omnis aliquid nulla doloribus! Fugit explicabo blanditiis dolorem atque, eligendi doloribus. Fuga, pariatur suscipit?</p>
+                                            <a href="#" class="btn btn-primary">Saiba mais</a>
+                                        </div>
+                                        <div class="card-footer">
+                                            <p class="card-text"> Postado em 21/08/2023 - 12:00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-4">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h5 class="font-titulos mb-0">Constante de Hubble</h5>
+                                        </div>
+                                        <div class="card-body">
+                                            <img class="w-100 rounded" src="./images/buracos-negros/buraco-negro-3.jpg" alt="">
+                                            <h5 class="font-titulos mt-3">Expansão do Universo segue intrigando os cientistas</h5>
+                                            <p class="card-text"></p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, facilis soluta voluptatem aut consequatur ipsum eligendi enim magni tempora similique vero hic, reiciendis odio in eum cumque nemo quam voluptatibus.</p>
+                                            <a href="#" class="btn btn-primary">Saiba mais</a>
+                                        </div>
+                                        <div class="card-footer">
+                                            <p class="card-text"> Postado em 21/09/2023 - 10:15</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-4">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h5 class="font-titulos mb-0">Nebulosa de Orion</h5>
+                                        </div>
+                                        <div class="card-body">
+                                            <img class="w-100 rounded" src="./images/buracos-negros/orion-nebula-11107_1280.jpg" alt="">
+                                            <h5 class="font-titulos mt-3">Possível sistema quádruplo pode estar escondido em Orion</h5>
+                                            <p class="card-text"></p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, rerum incidunt asperiores quos error sit voluptates, magnam optio sunt deserunt unde aliquam voluptatibus blanditiis eius quia sed tenetur vero quae?</p>
+                                            <a href="#" class="btn btn-primary">Saiba mais</a>
+                                        </div>
+                                        <div class="card-footer">
+                                            <p class="card-text"> Postado em 15/09/2023 - 08:15</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-4">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h5 class="font-titulos mb-0">Idade do Universo</h5>
+                                        </div>
+                                        <div class="card-body">
+                                            <img class="w-100 rounded" src="./images/buracos-negros/universe-2742113_1280.jpg" alt="">
+                                            <h5 class="font-titulos mt-3">Idade do universo pode não estar correta</h5>
+                                            <p class="card-text"></p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa repudiandae dolore provident praesentium eius. Molestias soluta omnis aliquid nulla doloribus! Fugit explicabo blanditiis dolorem atque, eligendi doloribus. Fuga, pariatur suscipit?</p>
+                                            <a href="#" class="btn btn-primary">Saiba mais</a>
+                                        </div>
+                                        <div class="card-footer">
+                                            <p class="card-text"> Postado em 21/08/2023 - 12:00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="aba4" class="tab-pane">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-3 mb-4">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h5 class="font-titulos mb-0">Exoplanetas x Vida</h5>
+                                        </div>
+                                        <div class="card-body">
+                                            <img class="w-100 rounded" src="./images/planetas/planet-1702788_1280.jpg" alt="">
+                                            <h5 class="font-titulos mt-3">Encotraremos vida em lagum exoplaneta?</h5>
+                                            <p class="card-text"></p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, facilis soluta voluptatem aut consequatur ipsum eligendi enim magni tempora similique vero hic, reiciendis odio in eum cumque nemo quam voluptatibus.</p>
+                                            <a href="#" class="btn btn-primary">Saiba mais</a>
+                                        </div>
+                                        <div class="card-footer">
+                                            <p class="card-text"> Postado em 21/09/2023 - 10:15</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-4">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h5 class="font-titulos mb-0">Novos Exoplanetas</h5>
+                                        </div>
+                                        <div class="card-body">
+                                            <img class="w-100 rounded" src="./images/planetas/planet-8215532_1280.png" alt="">
+                                            <h5 class="font-titulos mt-3">James Webb descobre um exoplaneta por dia</h5>
+                                            <p class="card-text"></p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                            <a href="#" class="btn btn-primary">Saiba mais</a>
+                                        </div>
+                                        <div class="card-footer">
+                                            <p class="card-text"> Postado em 15/09/2023 - 08:15</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-4">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h5 class="font-titulos mb-0">Terra com Anéis</h5>
+                                        </div>
+                                        <div class="card-body">
+                                            <img class="w-100 rounded" src="./images/planetas/neptune-5550216_1280.jpg" alt="">
+                                            <h5 class="font-titulos mt-3">Descoberta Super Terra com anéis</h5>
+                                            <p class="card-text"></p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                                            <a href="#" class="btn btn-primary">Saiba mais</a>
+                                        </div>
+                                        <div class="card-footer">
+                                            <p class="card-text"> Postado em 21/08/2023 - 12:00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 mb-4">
+                                    <div class="card">
+                                        <div class="card-header">
+                                            <h5 class="font-titulos mb-0">Novos Exoplanetas</h5>
+                                        </div>
+                                        <div class="card-body">
+                                            <img class="w-100 rounded" src="./images/planetas/planet-8215532_1280.png" alt="">
+                                            <h5 class="font-titulos mt-3">James Webb descobre, em média, um exoplaneta por dia</h5>
+                                            <p class="card-text"></p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                            <a href="#" class="btn btn-primary">Saiba mais</a>
+                                        </div>
+                                        <div class="card-footer">
+                                            <p class="card-text"> Postado em 15/09/2023 - 08:15</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="fale-conosco" class="mt-4 pt-4 pb-5">
+            <h2 class="font-titulos text-center mb-4">Fale Conosco</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7 mb-5">
+                        <form class="form">
+                            <div>
+                                <label class="form-label font-titulos" for="nome">Nome:</label>
+                                <input id="nome" name="nome" type="text" class="form-control">
+                            </div>
+                            <div>
+                                <label class="form-label font-titulos mt-3" for="email">E-mail:</label>
+                                <input id="email" name="email" class="form-control" type="e-mail">
+                            </div>
+                            <div>
+                                <label class="form-label font-titulos mt-3" for="tel">Telefone (opcional):</label>
+                                <input id="tel" class="form-control">
+                            </div>
+                            <div>
+                                <label class="form-label font-titulos mt-3" for="mensagem">Sua mensagem:</label>
+                                <textarea id="mensagem" name="mensagem" rows="5" class="form-control"></textarea>
+                            </div>
+                            <button class="btn mt-3" type="submit">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="col-md-5 ps-5">
+                        <div class="redes-sociais mb-5">
+                            <h4 class="font-titulos">Redes Sociais</h4>
+                            <ul class="nav nav-bar">
+                                <li class="nav-item me-2"><a href="#"><i class="bi bi-facebook"></i></a></li>
+                                <li class="nav-item me-2"><a href="#"><i class="bi bi-instagram"></i></a></li>
+                                <li class="nav-item me-2"><a href="#"><i class="bi bi-youtube"></i></a></li>
+                                <li class="nav-item"><a href="#"><i class="bi bi-twitter"></i></a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 class="font-titulos">
+                                <i class="bi bi-cursor"></i>
+                                Endereço:</h4>
+                            <p>R. das Estrelas, 523 - Observatório - BH -MG</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container pt-4 pb-4">
+                <p class="text-center mb-0">Profissão: Desenvolvedor Full Stack Java</p>
+                <p class="text-center mb-0">&copy; EBAC - Todos os direitos reservados - 2023</p>
+            </div>
+        </footer>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/code.jquery.com_jquery-3.7.1.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
